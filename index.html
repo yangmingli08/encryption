@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Encryption</title>
+  <script type="text/javascript" src='functions.js'></script>
+  <script type="text/javascript" src='sha256.js'></script>
+  <script type="text/javascript" src='aes.js'></script>
+  <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+  <div class="major">
+    <h3>Hash</h3>
+    <input type="text" value="0xFFFFFF" id='ip1'>
+    <button type="button" name="button" onclick="generateSha256()">Generate</button>
+    <button type="button" name="button" onclick="generateSha256nsalt()">Add Salt</button>
+    <p id='pHash'>SHA256</p>
+  </div>
+  <div class="major">
+    <h3>Synchronized Encryption</h3>
+    <textarea id="ip2" rows="3" cols="80">Your plain or cipher text here</textarea>
+    <br>
+    <input type="text" value="key" id='ipk'>
+    <button type="button" name="button" onclick="encriptAes()">Encript</button>
+    <button type="button" name="button" onclick="decriptAes()">Decript</button>
+    <p id='pSyn'>Advanced Encription Standard</p>
+  </div>
+  <div class="major">
+    <h3>Asynchronous Encryption</h3>
+    <input type="text" value="Not Implemented Yet" id='ip3'>
+    <button type="button" name="button" onclick="genrateRSA()">Generate</button>
+    <p id='pAsy'>RSA</p>
+  </div>
+</body>
+
+</html>
